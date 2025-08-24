@@ -1,0 +1,76 @@
+export const zh = {
+    brand: {
+        name: 'IROW',
+        tagline: 'EU 时区 · 资深玩家 · IRL优先',
+        cta: '加入 Discord',
+    },
+    nav: {
+        about: '关于我们',
+        offer: '能提供什么',
+        activities: '我们的活动',
+        join: '如何加入',
+        reqs: '要求',
+        goals: '目标',
+        contact: '联系',
+    },
+    hero: {
+        title: '招募有经验或回归的飞行员',
+        subtitle:
+            '我们是一个中等规模的 EU 时区公司，成员多为老玩家。\n几乎每晚都有活动，但大多数人都有工作/家庭，现实优先。',
+        bullets: [
+            '每周公司活动（有发放）',
+            '公司竞赛：每月 1,000–2,000 PLEX',
+            '可使用 C.R.A.B.',
+            'JF 跳货与精炼服务',
+        ],
+    },
+    about: [
+        'IROW (Intergalactic Republic Of Wadiya) 正在招募有经验和回归的飞行员。',
+        '我们是一个 EU 时区的中等规模公司，寻找志同道合的胶囊人。',
+        '几乎每天晚上活跃，但现实生活永远优先。',
+    ],
+    offer: [
+        '每周公司活动（有发放）',
+        '公司竞赛与奖励，每月 1,000–2,000 PLEX。',
+        '可使用 C.R.A.B.，并有人一起刷。',
+        '多个采矿系统（T3 升级）和 90.6% 精炼站。',
+        '生产与反应设施，满足一切需要。',
+        '有经验的工业玩家愿意指导。',
+        '地理位置方便，靠近 The Forge。',
+        '公司 JF 服务和精炼服务。',
+        '活跃且有经验的管理层与成员。',
+    ],
+    activities: [
+        { key: 'pvp',       title: 'PvP',             text: '有经验的成员，EU 时区几乎每晚活跃。', image: '/src/assets/activities/pvp.png' },
+        { key: 'industry',  title: '工业',             text: '公司生产与反应设施满足各种需求。',    image: '/src/assets/activities/industry.png' },
+        { key: 'pve',       title: 'PvE / C.R.A.B.',  text: '可使用 C.R.A.B.，并有人一起刷。',       image: '/src/assets/activities/pve_crabs.png' },
+        { key: 'mining',    title: '采矿',             text: '多个采矿系统 (T3) 与 90.6% 精炼。',     image: '/src/assets/activities/mining.png' },
+        { key: 'logistics', title: '后勤',             text: '公司 JF 跳货与精炼服务，靠近 The Forge。', image: '/src/assets/activities/logistics.png' },
+        { key: 'mentoring', title: '指导',             text: '资深工业玩家愿意带新人。',             image: '/src/assets/activities/mentoring.png' },
+    ],
+    join: {
+        title: '如何加入',
+        steps: ['加入我们的 Discord', '提供 ESI/SEAT', '简短面试', '获得权限并起飞'],
+        hints: ['先打个招呼。', '安全与服务访问。', '快速语音聊天。', '角色、通知、一起飞！'],
+        cta: '加入 Discord',
+    },
+    reqs: {
+        hard: ['完整 ESI/SEAT 与面试', '两个账号', '愿意训练到资本舰'],
+        looking: [
+            '有 PvP/工业/PvE 兴趣的经验玩家',
+            '自给自足的飞行员',
+            '活跃在 Discord（需麦克风）',
+        ],
+    },
+    goals: [
+        '扩大工业与 PvP 活动',
+        '建立紧密的团队',
+        '发展强大的资本舰队',
+        '定期举办活动和竞赛',
+        '强化后勤与 JF 服务',
+        '保持高精炼与生产能力',
+        '支持新玩家和回归玩家',
+        '壮大 EU 时区存在感',
+    ],
+    footer: '© IROW — Intergalactic Republic Of Wadiya',
+}

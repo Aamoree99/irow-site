@@ -1,0 +1,76 @@
+export const fr = {
+    brand: {
+        name: 'IROW',
+        tagline: 'EU TZ · Expérimentés · IRL d’abord',
+        cta: 'Rejoindre Discord',
+    },
+    nav: {
+        about: 'À propos',
+        offer: 'Ce qu’on propose',
+        activities: 'Ce qu’on fait',
+        join: 'Nous rejoindre',
+        reqs: 'Conditions',
+        goals: 'Objectifs',
+        contact: 'Contact',
+    },
+    hero: {
+        title: 'Capsuliers expérimentés & revenants recherchés',
+        subtitle:
+            'Corp EU-TZ de taille moyenne composée de joueurs expérimentés.\nActifs presque tous les soirs, mais on reste adultes : l’IRL passe d’abord.',
+        bullets: [
+            'Événements de corpo chaque semaine (avec récompenses)',
+            'Concours de corp : 1 000–2 000 PLEX/mois',
+            'Accès aux C.R.A.B.',
+            'Services JF & raffinage',
+        ],
+    },
+    about: [
+        'IROW (Intergalactic Republic Of Wadiya) recrute des capsuliers expérimentés et des revenants.',
+        'Corp de taille moyenne en EU-TZ, on cherche des joueurs dans le même état d’esprit.',
+        'Actifs quasi tous les soirs, mais l’IRL reste prioritaire.',
+    ],
+    offer: [
+        'Événements hebdo (avec récompenses)',
+        'Concours pour honks et plus, dotation 1 000–2 000 PLEX par mois.',
+        'Accès aux C.R.A.B. et du monde pour les faire.',
+        'Plusieurs systèmes miniers (upgrade T3) et station à 90,6 % de raffinage.',
+        'Installations de prod et de réactions pour tous les besoins.',
+        'Indus expérimentés prêts à former.',
+        'Position pratique, proche de The Forge.',
+        'Service JF de corp et service de raffinage.',
+        'Direction et membres actifs/expérimentés.',
+    ],
+    activities: [
+        { key: 'pvp',       title: 'PvP',             text: 'Membres expérimentés, activité EU-TZ la plupart des soirs.', image: '/src/assets/activities/pvp.png' },
+        { key: 'industry',  title: 'Industrie',       text: 'Prod & réactions pour tous les besoins.',                    image: '/src/assets/activities/industry.png' },
+        { key: 'pve',       title: 'PvE / C.R.A.B.',  text: 'Accès C.R.A.B. et équipe pour farmer.',                      image: '/src/assets/activities/pve_crabs.png' },
+        { key: 'mining',    title: 'Mining',          text: 'Plusieurs systèmes (T3) & 90,6 % de raffinage.',             image: '/src/assets/activities/mining.png' },
+        { key: 'logistics', title: 'Logistique',      text: 'Service JF et raffinage. À côté de The Forge.',              image: '/src/assets/activities/logistics.png' },
+        { key: 'mentoring', title: 'Mentorat',        text: 'Indus expérimentés prêts à coacher.',                         image: '/src/assets/activities/mentoring.png' },
+    ],
+    join: {
+        title: 'Comment nous rejoindre',
+        steps: ['Rejoins notre Discord', 'Fournis ESI/SEAT', 'Petit entretien', 'On te rôlera et on vole'],
+        hints: ['Passe dire bonjour.', 'Sécurité & accès aux services.', 'Vite fait en vocal.', 'Rôles, pings, au décollage !'],
+        cta: 'Rejoindre Discord',
+    },
+    reqs: {
+        hard: ['ESI/SEAT complet + entretien', '2 comptes', 'Prêt à monter en capitals'],
+        looking: [
+            'Joueurs expérimentés intéressés par PvP/Industrie/PvE',
+            'Joueurs autonomes',
+            'Actifs sur Discord (micro requis)',
+        ],
+    },
+    goals: [
+        'Développer l’industrie et le PvP',
+        'Créer un groupe soudé',
+        'Monter une flotte capital solide',
+        'Événements/concours réguliers',
+        'Renforcer la logistique et le service JF',
+        'Maintenir un haut raffinage et une prod stable',
+        'Soutenir les nouveaux/retours',
+        'Grandir en EU-TZ',
+    ],
+    footer: '© IROW — Intergalactic Republic Of Wadiya',
+}

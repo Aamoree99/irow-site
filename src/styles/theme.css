@@ -1,0 +1,136 @@
+:root{
+    /* Палитра */
+    --bg:#0b0f14;
+    --bg-2:#0f1623;
+    --surface:#121a24;
+    --surface-2:#0e1520;
+    --text:#eaf2ff;
+    --muted:#9fb0c0;
+    --border:rgba(255,255,255,.08);
+
+
+    /* Акценты */
+    --accent:#00d4ff;
+    --accent-2:#7bf5ff;
+    --accent-warm:#ffd166;
+
+    /* Материал-высоты */
+    --elev-1: 0 6px 14px rgba(0,0,0,.35);
+    --elev-2: 0 10px 24px rgba(0,0,0,.45);
+    --elev-3: 0 18px 44px rgba(0,0,0,.50);
+
+    --radius: 14px;
+
+    /* Компактные отступы */
+    --container-max: 1120px;
+    --container-pad: clamp(10px, 1.6vw, 20px);
+    --section-y: clamp(24px, 5.5vw, 56px);
+    --section-y-compact: clamp(26px, 5vw, 56px);
+}
+
+*{ box-sizing:border-box }
+html,body,#app{ height:100% }
+
+body{
+    margin:0; color:var(--text); background:var(--bg);
+    font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility;
+    /* анимированный фон */
+    background:
+            radial-gradient(1000px 600px at 80% -10%, rgba(0,212,255,.10), transparent 70%),
+            radial-gradient(900px 600px at -10% 40%, rgba(255,209,102,.08), transparent 70%),
+            linear-gradient(180deg, var(--bg) 0%, var(--bg-2) 100%);
+    background-attachment: fixed;
+}
+
+/* типографика — чуть плотнее заголовки по дефолту */
+h1,h2,h3{ font-family: Orbitron, Inter, sans-serif; letter-spacing:.6px; margin:0 0 10px }
+
+.container{
+    width: min(var(--container-max), 92vw);
+    margin: 0 auto;
+    padding: var(--container-pad);
+}
+
+.section{
+    padding: var(--section-y) 0;
+}
+/* ещё плотнее на очень узких экранах */
+@media (max-width: 560px){
+    .section{ padding: var(--section-y-compact) 0 }
+}
+
+/* Карточки в стиле стекло + материал */
+.card{
+    background: linear-gradient(180deg, rgba(18,26,36,.88), rgba(12,18,28,.86));
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    box-shadow: var(--elev-2);
+    transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease, background .18s ease;
+}
+/* чуть меньше «прыжок» при ховере */
+.card:hover{
+    transform: translateY(-1px);
+    box-shadow: var(--elev-3);
+    border-color: color-mix(in oklab, var(--accent) 28%, white 0%);
+}
+
+/* Кнопки с неоновым градиентом + ripple — компактнее паддинги */
+.btn{
+    position: relative;
+    display:inline-flex; align-items:center; gap:10px;
+    padding: 10px 16px; /* было 12x18 */
+    border-radius:12px; border:0; cursor:pointer;
+    font-weight: 900; letter-spacing:.4px; text-transform: uppercase;
+    overflow:hidden; isolation:isolate;
+    transition: transform .1s ease, box-shadow .18s ease, filter .18s ease;
+}
+.btn:active{ transform: translateY(1px) }
+
+.btn--primary{
+    background: linear-gradient(90deg, var(--accent) 0%, var(--accent-2) 100%);
+    color:#05222d; box-shadow: 0 0 26px rgba(0,212,255,.22);
+}
+.btn--primary:hover{ box-shadow: 0 8px 28px rgba(0,212,255,.32); filter: saturate(1.05) }
+
+.btn--ghost{
+    background: linear-gradient(180deg, rgba(18,26,36,.65), rgba(12,18,28,.55));
+    color: var(--text); border:1px solid var(--border);
+}
+.btn--ghost:hover{ border-color: color-mix(in oklab, var(--accent) 35%, white 0%) }
+
+/* Ripple слой */
+.btn .ripple{
+    position:absolute; inset:auto;
+    border-radius:50%; transform: translate(-50%, -50%);
+    background: radial-gradient(circle, rgba(255,255,255,.35) 0%, rgba(255,255,255,0) 60%);
+    pointer-events:none; width: 12px; height: 12px; opacity:.9;
+    animation: ripple .6s ease-out forwards;
+}
+@keyframes ripple{
+    0% { opacity:.35; transform: translate(-50%,-50%) scale(.5) }
+    100%{ opacity:0;   transform: translate(-50%,-50%) scale(18) }
+}
+
+/* Утилиты сетки — компактнее gap */
+.grid{ display:grid; gap:14px }                /* было 18px */
+@media (min-width: 760px){
+    .grid-2{ grid-template-columns:1fr 1fr }
+    .grid-3{ grid-template-columns:repeat(3,1fr) }
+}
+
+/* Базовые отступы элементов внутри секций, чтобы не ставить inline-стили */
+.section p{ margin: 0 0 10px }
+.section ul{ margin: 0; padding-left: 18px }
+.section h2 + *{ margin-top: 6px }             /* после заголовка — небольшой отступ */
+
+/* Тонкие скроллы */
+*{ scrollbar-color: rgba(160,180,200,.4) transparent; scrollbar-width: thin }
+
+/* плавный скролл по якорям */
+html { scroll-behavior: smooth }
+
+/* секции не залезают под липкий header (его высота ~64px) */
+section[id] { scroll-margin-top: 72px }

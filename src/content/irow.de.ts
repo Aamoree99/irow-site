@@ -1,0 +1,76 @@
+export const de = {
+    brand: {
+        name: 'IROW',
+        tagline: 'EU-TZ · Erfahren · IRL zuerst',
+        cta: 'Discord beitreten',
+    },
+    nav: {
+        about: 'Über uns',
+        offer: 'Was wir bieten',
+        activities: 'Was wir tun',
+        join: 'Beitreten',
+        reqs: 'Voraussetzungen',
+        goals: 'Ziele',
+        contact: 'Kontakt',
+    },
+    hero: {
+        title: 'Gesucht: erfahrene & zurückkehrende Kapselpiloten',
+        subtitle:
+            'Wir sind eine mittelgroße EU-TZ-Corp mit Veteranen.\nAktiv fast jeden Abend – aber IRL geht vor.',
+        bullets: [
+            'Wöchentliche Corp-Events (mit Rewards)',
+            'Corp-Wettbewerbe: 1.000–2.000 PLEX/Monat',
+            'Zugang zu C.R.A.B.',
+            'JF- & Raffinier-Service',
+        ],
+    },
+    about: [
+        'IROW (Intergalactic Republic Of Wadiya) sucht erfahrene und zurückkehrende Piloten.',
+        'Mittelgroße Corp in der EU-TZ, wir suchen Gleichgesinnte.',
+        'Fast jeden Abend aktiv, doch IRL hat Priorität.',
+    ],
+    offer: [
+        'Wöchentliche Corp-Events (mit Rewards)',
+        'Wettbewerbe für Honks u. a., Preisfonds 1.000–2.000 PLEX pro Monat.',
+        'Zugang zu C.R.A.B. und Leute zum Mitlaufen.',
+        'Mehrere Mining-Systeme (T3-Upgrade) und Station mit 90,6 % Raffineriequote.',
+        'Fertigung und Reaktionen für jeden Bedarf.',
+        'Erfahrene Industrials, die coachen.',
+        'Günstige Lage nahe The Forge.',
+        'Corp-eigener JF-Service und Raffinier-Support.',
+        'Aktive, erfahrene Leitung und Mitglieder.',
+    ],
+    activities: [
+        { key: 'pvp',       title: 'PvP',             text: 'Erfahrene Member, EU-TZ fast jeden Abend aktiv.', image: '/src/assets/activities/pvp.png' },
+        { key: 'industry',  title: 'Industrie',       text: 'Produktion & Reaktionen für alle Needs.',        image: '/src/assets/activities/industry.png' },
+        { key: 'pve',       title: 'PvE / C.R.A.B.',  text: 'Zugang zu C.R.A.B. und Team zum Farmen.',         image: '/src/assets/activities/pve_crabs.png' },
+        { key: 'mining',    title: 'Mining',          text: 'Mehrere Systeme (T3) & 90,6 % Raffinerie.',       image: '/src/assets/activities/mining.png' },
+        { key: 'logistics', title: 'Logistik',        text: 'JF-Service & Raffinier-Support. Nähe The Forge.', image: '/src/assets/activities/logistics.png' },
+        { key: 'mentoring', title: 'Mentoring',       text: 'Erfahrene Industrials unterstützen dich.',        image: '/src/assets/activities/mentoring.png' },
+    ],
+    join: {
+        title: 'So trittst du bei',
+        steps: ['Join unserem Discord', 'ESI/SEAT bereitstellen', 'Kurzes Gespräch', 'Rollen erhalten & abheben'],
+        hints: ['Sag kurz hallo.', 'Für Security & Service-Zugänge.', 'Kurzer Voice-Chat.', 'Rollen, Pings, los geht’s!'],
+        cta: 'Discord beitreten',
+    },
+    reqs: {
+        hard: ['Vollständiges ESI/SEAT & Interview', '2 Accounts', 'Bereitschaft in Capitals zu skillen'],
+        looking: [
+            'Erfahrene Spieler mit Interesse an PvP/Industrie/PvE',
+            'Selbstständige Piloten',
+            'Discord-aktiv (Mikro Pflicht)',
+        ],
+    },
+    goals: [
+        'Industrie und PvP ausbauen',
+        'Eine enge Truppe aufbauen',
+        'Starke Capital-Flotte entwickeln',
+        'Regelmäßige Corp-Events und Wettbewerbe',
+        'Logistik und JF-Service stärken',
+        'Hohe Raffinerie-/Produktionsfähigkeit halten',
+        'Neue/returning Piloten supporten',
+        'In der EU-TZ wachsen',
+    ],
+    footer: '© IROW — Intergalactic Republic Of Wadiya',
+}
